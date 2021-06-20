@@ -137,15 +137,6 @@ then
 		#
 fi
 
-if [[ -v key_file_path ]]
-then
-	echo \
-		-n \
-		"${deployment_object_key}" \
-		> "${key_file_path}" \
-		#
-else
-	echo \
-		"${deployment_object_key}" \
-		#
-fi
+echo \
+	"${git_commit_id}" \
+	#
